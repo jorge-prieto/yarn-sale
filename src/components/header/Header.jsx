@@ -8,11 +8,11 @@ import "./Header.css";
 
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const { state } = useContext(AppContext)
+  const { state } = useContext(AppContext);
 
   const handleToggle = () => {
-    setToggle(!toggle)
-  }
+    setToggle(!toggle);
+  };
 
   return (
     <nav className="navbar">
@@ -30,7 +30,7 @@ export const Header = () => {
             <a href="/">Electronics</a>
           </li>
           <li className="list-item-left">
-            <a href="/">Furnitures</a>
+            <a href="/">Furniture</a>
           </li>
           <li className="list-item-left">
             <a href="/">Toys</a>
@@ -42,10 +42,14 @@ export const Header = () => {
       </div>
       <div className="navbar-right">
         <ul className="list-right">
-          <li className="navbar-email" onClick={handleToggle} >platzi@example.com</li>
+          <li className="navbar-email" onClick={handleToggle}>
+            platzi@example.com
+          </li>
           <li className="navbar-shopping-cart">
             <img src={Cart} alt="shopping cart" />
-            {state.cart.lenght > 0 ? <div className="shopping-div">{state.cart.lenght}</div>  : null}
+            {state.cart.length > 0 ? (
+              <div className="shopping-div">{state.cart.length}</div>
+            ) : null}
           </li>
         </ul>
       </div>
