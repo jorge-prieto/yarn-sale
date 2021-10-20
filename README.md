@@ -1,3 +1,7 @@
+# yarn-sale
+
+Project created following a platzi course imparted by Oscar Barajas, the goal is practice some React concepts
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
